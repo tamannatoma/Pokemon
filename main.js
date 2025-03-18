@@ -97,32 +97,41 @@ const pokemon = [
     }
 ]
 
+const body = document.querySelector("body");
+body.classList.add("body");
+
 for (let i = 0; i < pokemon.length; i++) {
     console.log(pokemon[i].thumbnail);
     const node = document.createElement("div");
     document.getElementById("content").appendChild(node);
+    node.classList.add("content");
 
     const image = document.createElement("img");
     node.appendChild(image);
+    node.classList.add("img");
     image.src = "media/" + pokemon[i].thumbnail;
 
     const id = document.createElement("id");
     node.appendChild(id);
+    node.classList.add("idnum")
     id.innerText = '\n' + pokemon[i].id;
 
     const name = document.createElement("name");
     node.appendChild(name);
+    node.classList.add("name");
     name.innerText = '\n' + pokemon[i].name + '\n';
 
-    const button1 = document.createElement("button1");
-    node.appendChild(button1);
-    button1.innerText = '\n' + pokemon[i].type[0];
-    button1.classList.add('button1');
+    const button = document.createElement("button");
+    node.appendChild(button);
+    button.innerText = pokemon[i].type[0];
+    button.classList.add('button');
 
-    const button2 = document.createElement("button2");
+    const button2 = document.createElement("button");
     node.appendChild(button2);
-    button2.innerText = ' ' + pokemon[i].type[1];
+
+    button2.innerText = pokemon[i].type[1];
     button2.classList.add('button2');
+
 
 
 

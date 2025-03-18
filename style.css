@@ -1,83 +1,77 @@
-body {
+.body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
-}
-
-#headerimage1 {
-    display: flex;
 }
 
 .content {
-    height: auto;
-    width: 80vw;
-    /*background: rgb(194, 180, 180);*/
+
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.box1 {
-    height: 320px;
-    width: 200px;
-    /*border: 3px solid black;*/
-    text-align: center;
-    margin: 20px;
-    margin-top: 10px;
-
-
-
+.img {
+    height: 400px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
 }
 
-.box1:hover {
-    background: linear-gradient(#7084b3, #ab7276);
+.img:hover {
+    background-color: rgb(21, 61, 85);
+    border-radius: 10px;
+    color: beige;
+    opacity: 0.8;
     cursor: pointer;
-    opacity: 0.9;
-    /*transition: all .3s ease-in-out;
-    transform: translateY(0px);
-    transform: scale(1.05);
-    filter: saturate(2);*/
-    color: white;
+}
 
+.idnum {
+    color: rgb(10, 9, 54);
+}
 
+.name {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
 
 
 }
 
-
-.btn {
-    background-color: blueviolet;
-    color: white;
+.button {
+    height: 20px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
-    /*border-radius: 2px solid rgb(58, 15, 15);*/
+    background-color: rgb(21, 144, 132);
+    text-transform: capitalize;
+
 }
 
-.btn1 {
-    background-color: rgb(207, 35, 118);
+.button:hover {
+    background-color: rgb(9, 34, 53);
+    cursor: pointer;
     color: white;
+}
 
+.button2 {
+    height: 20px;
+    width: 80px;
+    margin-top: 5px;
     border-radius: 5px;
-}
+    background-color: rgb(127, 77, 160);
+    text-transform: capitalize;
 
-.title {
-    padding-top: 0px;
-    font-size: 18px;
-    font-weight: 900;
-    /* font-style: italic;*/
-    color: rgb(15, 2, 2);
-    text-shadow: .5px .5px 0px #584343;
 
 }
 
-.button1 {
-
-    background-color: #ab7276;
-    border-radius: 2px;
-    height: 30px;
-    margin-top: 0px;
+.button2:hover {
+    background-color: rgb(45, 3, 43);
+    cursor: pointer;
+    color: white;
 }
