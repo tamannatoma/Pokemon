@@ -132,10 +132,4 @@ for (let i = 0; i < pokemon.length; i++) {
     button2.innerText = pokemon[i].type[1];
     button2.classList.add('button2');
 
-
-
-
-
-
-
 }

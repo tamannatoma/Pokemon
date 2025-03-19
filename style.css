@@ -22,7 +22,7 @@
 }
 
 .img:hover {
-    background-color: rgb(21, 61, 85);
+    background-color: rgb(20, 55, 78);
     border-radius: 10px;
     color: beige;
     opacity: 0.8;
@@ -34,19 +34,20 @@
 }
 
 .name {
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight: 800;
 
 
 }
 
 .button {
+    margin-top: 10px;
     height: 20px;
     width: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    display: inline;
     border-radius: 5px;
     background-color: rgb(21, 144, 132);
     text-transform: capitalize;
