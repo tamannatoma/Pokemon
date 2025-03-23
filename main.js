@@ -104,11 +104,11 @@ for (let i = 0; i < pokemon.length; i++) {
     console.log(pokemon[i].thumbnail);
     const node = document.createElement("div");
     document.getElementById("content").appendChild(node);
-    node.classList.add("content");
+    node.classList.add("card");
 
     const image = document.createElement("img");
     node.appendChild(image);
-    node.classList.add("img");
+    image.classList.add("img");
     image.src = "media/" + pokemon[i].thumbnail;
 
     const id = document.createElement("id");
@@ -120,16 +120,15 @@ for (let i = 0; i < pokemon.length; i++) {
     node.appendChild(name);
     node.classList.add("name");
     name.innerText = '\n' + pokemon[i].name + '\n';
+    for (let j = 0; j < pokemon[i].type.length; j++) {
+        const button = document.createElement("button");
+        node.appendChild(button);
+        button.innerText = pokemon[i].type[j];
+        button.classList.add('button');
+        button.classList.add(pokemon[i].type[j]);
 
-    const button = document.createElement("button");
-    node.appendChild(button);
-    button.innerText = pokemon[i].type[0];
-    button.classList.add('button');
+    }
 
-    const button2 = document.createElement("button");
-    node.appendChild(button2);
 
-    button2.innerText = pokemon[i].type[1];
-    button2.classList.add('button2');
 
 }
