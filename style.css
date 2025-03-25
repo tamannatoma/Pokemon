@@ -1,7 +1,6 @@
-.body {
+body {
     margin: 0;
     padding: 0;
-    /*position: relative;*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,7 +8,7 @@
 }
 
 header {
-    height: 80vh;
+    height: 70vh;
     position: relative;
     width: 100%;
     display: flex;
@@ -21,13 +20,14 @@ header {
 .title {
     display: flex;
     width: 80vw;
-    height: 70vh;
+    height: 60vh;
     position: absolute;
     transform: translateX(-100vw);
     animation: slideRight 1s forwards;
 }
 
 .pokeball {
+
     display: flex;
     width: 100px;
     height: 100px;
@@ -52,20 +52,16 @@ header {
     }
 
     100% {
-        top: 80%;
+        top: 70%;
     }
 }
 
 #content {
     height: auto;
     width: 80vw;
-
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    align-self: center;
-
     margin-left: auto;
     margin-right: auto;
 
@@ -90,29 +86,25 @@ header {
     scale: 1.01;
     cursor: pointer;
     border-radius: 5px;
-    /* transform: rotateY(360deg);
-    transition: 2s;*/
+    opacity: 0.9;
+
 }
 
 .img {
-
+    border-radius: 5px;
     height: 200px;
     width: 150px;
+    display: flex;
+    justify-content: center;
     background-color: rgb(217, 225, 231);
 
 }
 
-/*
-.img:hover {
-
-    border-radius: 10px;
-    color: beige;
-    opacity: 0.8;
-    cursor: pointer;
-}*/
 
 .idnum {
     color: rgb(10, 9, 54);
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -121,47 +113,49 @@ header {
     color: rgb(0, 0, 0);
     margin-bottom: 10px;
     font-weight: 800;
-
+    display: flex;
+    justify-content: center;
 
 }
 
 
 
 .button {
-
+    margin-top: 5px;
     height: 20px;
     width: 60px;
     text-align: center;
     display: inline;
+    justify-content: center;
     border-radius: 5px;
     text-transform: capitalize;
 
     &.fire {
-        background-color: rgb(153, 34, 34);
+        background-color: rgb(185, 56, 56);
     }
 
     &.plant {
-        background-color: rgb(10, 105, 10);
+        background-color: rgb(66, 142, 66);
     }
 
     &.poison {
-        background-color: rgb(114, 29, 127);
+        background-color: rgb(131, 58, 142);
     }
 
     &.bug {
-        background-color: rgb(67, 148, 27);
+        background-color: rgb(112, 241, 232);
     }
 
     &.normal {
-        background-color: rgb(136, 35, 90);
+        background-color: rgb(192, 79, 79);
     }
 
     &.fairy {
-        background-color: rgb(114, 29, 127);
+        background-color: rgb(157, 85, 169);
     }
 
     &.phychic {
-        background-color: rgb(165, 50, 102);
+        background-color: rgb(180, 70, 119);
     }
 
     &.ice {
@@ -169,16 +163,40 @@ header {
     }
 
     &.water {
-        background-color: rgb(127, 125, 20);
+        background-color: rgb(165, 163, 57);
     }
 
     &.ground {
-        background-color: rgb(172, 46, 75);
+        background-color: rgb(149, 69, 88);
     }
 
     &.dark {
-        background-color: rgb(193, 48, 29);
+        background-color: rgb(177, 75, 61);
 
     }
+
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    header {
+        height: 50vh;
+        width: 100%;
+
+    }
+
+    .title {
+        display: flex;
+        width: 50vw;
+        height: 25vh;
+
+    }
+
+    .pokeball {
+        display: flex;
+        width: 50px;
+        height: 50px;
+
+    }
+
 
 }
