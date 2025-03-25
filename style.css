@@ -68,8 +68,8 @@ header {
 }
 
 .card {
-    height: 350px;
-    width: 200px;
+    height: 400px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,8 +92,8 @@ header {
 
 .img {
     border-radius: 5px;
-    height: 200px;
-    width: 150px;
+    height: 250px;
+    width: 200px;
     display: flex;
     justify-content: center;
     background-color: rgb(217, 225, 231);
