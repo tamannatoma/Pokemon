@@ -120,6 +120,7 @@ for (let i = 0; i < pokemon.length; i++) {
     node.appendChild(name);
     node.classList.add("name");
     name.innerText = '\n' + pokemon[i].name + '\n';
+
     for (let j = 0; j < pokemon[i].type.length; j++) {
         const button = document.createElement("button");
         node.appendChild(button);
